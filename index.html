@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wanderlust Travels</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Wander<span>lust</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#itineraries">Itineraries</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">EXPLORE • DREAM • DISCOVER</p>
+
+            <h1>
+                The world is waiting
+                <span>for you.</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover beautiful destinations, unforgettable experiences
+                and carefully planned travel itineraries.
+            </p>
+
+            <a href="#itineraries" class="hero-btn">
+                Explore Itineraries →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section id="about" class="about section">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80"
+                alt="Beautiful travel destination">
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT THE WEBSITE</p>
+
+            <h2>
+                Travel is not just about
+                <span>places.</span>
+            </h2>
+
+            <p>
+                Wanderlust Travels is a personal collection of travel
+                inspiration, favourite destinations and thoughtfully
+                designed itineraries.
+            </p>
+
+            <p>
+                Whether you are planning a relaxing holiday, an adventurous
+                journey or a cultural exploration, this website helps you
+                discover ideas and plan your next unforgettable trip.
+            </p>
+
+            <div class="about-stats">
+
+                <div>
+                    <strong>25+</strong>
+                    <span>Destinations</span>
+                </div>
+
+                <div>
+                    <strong>40+</strong>
+                    <span>Itineraries</span>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <span>Adventure</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ITINERARIES ================= -->
+
+    <section id="itineraries" class="itineraries section">
+
+        <div class="section-heading">
+
+            <p class="section-label">MY FAVOURITES</p>
+
+            <h2>
+                Favourite <span>Itineraries</span>
+            </h2>
+
+            <p>
+                A few journeys that deserve a place on every traveller's list.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <!-- Card 1 -->
+
+            <article class="travel-card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+                        alt="Taj Mahal in India">
+
+                    <span class="card-tag">CULTURE</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Magical India</h3>
+
+                    <p class="location">📍 Delhi • Agra • Jaipur</p>
+
+                    <p>
+                        Experience India's magnificent architecture,
+                        colourful markets, rich history and unforgettable food.
+                    </p>
+
+                    <button onclick="showItinerary('Magical India')">
+                        View Journey →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Card 2 -->
+
+            <article class="travel-card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+                        alt="Paris">
+
+                    <span class="card-tag">ROMANCE</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Paris & Beyond</h3>
+
+                    <p class="location">📍 Paris • Versailles • Loire</p>
+
+                    <p>
+                        Discover charming streets, world-famous museums,
+                        French cuisine and the timeless beauty of Paris.
+                    </p>
+
+                    <button onclick="showItinerary('Paris & Beyond')">
+                        View Journey →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Card 3 -->
+
+            <article class="travel-card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+                        alt="Swiss mountains">
+
+                    <span class="card-tag">ADVENTURE</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Swiss Escape</h3>
+
+                    <p class="location">📍 Zurich • Lucerne • Interlaken</p>
+
+                    <p>
+                        Snow-capped mountains, crystal-clear lakes and
+                        spectacular train journeys through Switzerland.
+                    </p>
+
+                    <button onclick="showItinerary('Swiss Escape')">
+                        View Journey →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Card 4 -->
+
+            <article class="travel-card">
+
+                <div class="card-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=900&q=80"
+                        alt="Tropical beach">
+
+                    <span class="card-tag">RELAX</span>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h3>Tropical Paradise</h3>
+
+                    <p class="location">📍 Maldives • Sri Lanka</p>
+
+                    <p>
+                        White sandy beaches, turquoise waters and peaceful
+                        island experiences perfect for slowing down.
+                    </p>
+
+                    <button onclick="showItinerary('Tropical Paradise')">
+                        View Journey →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRAVEL QUOTE ================= -->
+
+    <section class="quote-section">
+
+        <div class="quote-content">
+
+            <p class="quote-mark">“</p>
+
+            <h2>
+                We travel not to escape life,
+                but for life not to escape us.
+            </h2>
+
+            <p>— Anonymous</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact section">
+
+        <div class="contact-info">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>
+                Let's plan your
+                <span>next adventure.</span>
+            </h2>
+
+            <p>
+                Have a destination in mind? Want to share a travel story?
+                Send me a message.
+            </p>
+
+            <div class="contact-details">
+
+                <p>📧 hello@wanderlusttravels.com</p>
+
+                <p>🌍 Somewhere in the world</p>
+
+            </div>
+
+        </div>
+
+
+        <form id="contactForm" class="contact-form">
+
+            <div class="form-group">
+
+                <label for="name">Your Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Tell me about your travel plans..."
+                    required></textarea>
+
+            </div>
+
+
+            <button type="submit" class="submit-btn">
+                Send Message →
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+                    Wander<span>lust</span>
+                </div>
+
+                <p>
+                    Collecting places, memories and stories
+                    from around the world.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Explore</h4>
+
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#itineraries">Itineraries</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h4>Follow the journey</h4>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Pinterest">Pinterest</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Wanderlust Travels. Made with ❤️ for travellers.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
